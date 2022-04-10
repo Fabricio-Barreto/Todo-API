@@ -16,7 +16,7 @@ Route          | Method | Description
 /check/:id     | GET    | Update check to true or false
 
 
-### GET http://localhost:3000/api/v1/tasks
+### GET https://todoapiplancto.herokuapp.com/api/v1/tasks
 
 ##### HTTP Request Body Example
 N/A
@@ -40,7 +40,7 @@ N/A
      "v": 0
     }
 
-### POST http://localhost:3000/api/v1/tasks
+### POST https://todoapiplancto.herokuapp.com/api/v1/tasks
 
 ##### HTTP Request Body Example
     
@@ -62,7 +62,7 @@ N/A
     }
     
     
-### GET http://localhost:3000/api/v1/getById/62532b61df217ed18170d166 
+### GET https://todoapiplancto.herokuapp.com/api/v1/getById/62532b61df217ed18170d166 
 
 ##### HTTP Request Body Example
 N/A
@@ -79,7 +79,7 @@ N/A
     }
     
     
-### POST http://localhost:3000/api/v1/updateOne/62532b61df217ed18170d166 
+### POST https://todoapiplancto.herokuapp.com/api/v1/updateOne/62532b61df217ed18170d166 
 
 ##### HTTP Request Body Example
     
@@ -100,7 +100,7 @@ N/A
      "__v": 0
     }
     
-### GET http://localhost:3000/api/check/2532b61df217ed18170d166 
+### GET https://todoapiplancto.herokuapp.com/api/v1check/2532b61df217ed18170d166 
 
 ##### HTTP Request Body Example
 N/A
@@ -112,7 +112,7 @@ N/A
       Task Deleted
     }
     
-### GET http://localhost:3000/api/v1/deleteOne/6252585dab79fae147baf49d
+### GET https://todoapiplancto.herokuapp.com/api/v1deleteOne/6252585dab79fae147baf49d
 
 ##### HTTP Request Body Example
 N/A
