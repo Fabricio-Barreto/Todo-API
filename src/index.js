@@ -1,8 +1,7 @@
 const express = require('express')
 const path = require("path")
-const taskRouter = require("../routes/taskRoutes")
+const taskRouter = require("../routes/TaskRoutes")
 const connectToDb = require("../database/db")
-const Task = require('../model/Task')
 
 connectToDb()
 const app = express()
