@@ -112,7 +112,7 @@ N/A
       Task Deleted
     }
     
-### GET http://localhost:3000/api/v1/ deleteOne/6252585dab79fae147baf49d
+### GET http://localhost:3000/api/v1/deleteOne/6252585dab79fae147baf49d
 
 ##### HTTP Request Body Example
 N/A
