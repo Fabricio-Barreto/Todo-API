@@ -3,6 +3,16 @@ const Task = require('../model/Task')
 require('../Exception/Exception')
 
 const getAllTask = async (req, res) => {
+    try {
+        const taskList = await Task.find()
+        console.log(taskList)
+        res.status(200).send(taskList)
+    } catch (err) {
+        res.status(500).send(err)
+    }
+}
+
+const createTask = async (req, res) => {
     const task = new Task(req.body)
 
     try {
@@ -10,16 +20,6 @@ const getAllTask = async (req, res) => {
         res.status(201).send(task)
     } catch (err) {
         res.status(400).send(err)
-    }
-}
-
-const createTask = async (req, res) => {
-    try {
-        const taskList = await Task.find()
-        console.log(taskList)
-        res.status(200).send(taskList)
-    } catch (err) {
-        res.status(500).send(err)
     }
 }
 
