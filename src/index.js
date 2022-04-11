@@ -17,7 +17,7 @@ const viewsPath = path.join(__dirname, '../templates/views')
 app.set("view engine", "ejs")
 app.set('views', viewsPath)
 
-app.get('/', cors(), (req, res) => {
+app.get('/', (req, res) => {
     res.render('index', {
  
     })
