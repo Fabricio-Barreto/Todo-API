@@ -14,7 +14,11 @@ app.use(routes)
 app.use(cors({
     origin: '*',
     methods: ['GET','POST','DELETE','UPDATE','PUT','PATCH']
+
 }))
+
+// or preflight for all routes
+routes.options('*', cors())
 
 const viewsPath = path.join(__dirname, '../templates/views')
 
