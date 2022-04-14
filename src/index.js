@@ -17,8 +17,10 @@ app.use(cors({
 
 }))
 
-// or preflight for all routes
-routes.options('*', cors())
+app.options('/api/v1/tasks', cors ())
+app.post('/api/v1/tasks', cors (), function(req, res, next) {
+    res.json({msg: 'this is CORS DE CORNO.'})
+})
 
 const viewsPath = path.join(__dirname, '../templates/views')
 
