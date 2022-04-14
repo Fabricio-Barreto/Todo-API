@@ -10,12 +10,12 @@ const port = process.env.PORT || 3000
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
-app.use(routes)
 app.use(cors({
     origin: '*',
     methods: ['GET','POST','DELETE','UPDATE','PUT','PATCH']
 
 }))
+app.use(routes)
 
 app.options('/api/v1/tasks', cors ())
 app.post('/api/v1/tasks', cors (), function(req, res, next) {
