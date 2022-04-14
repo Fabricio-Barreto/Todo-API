@@ -12,8 +12,9 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 app.use(routes)
 app.use(cors({
-    origin: '*'
-}));
+    origin: '*',
+    methods: ['GET','POST','DELETE','UPDATE','PUT','PATCH']
+}))
 
 const viewsPath = path.join(__dirname, '../templates/views')
 
