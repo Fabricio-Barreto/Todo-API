@@ -9,11 +9,19 @@ const taskSchema = new mongoose.Schema({
         type: String,
         require: true
     },
+    category: {
+        type: String,
+        require: true
+    },
     check: {
         type: Boolean,
         default: false
     },
     date: {
+        type: Date,
+        default: Date.now(),
+    },
+    update_at: {
         type: Date,
         default: Date.now(),
     }

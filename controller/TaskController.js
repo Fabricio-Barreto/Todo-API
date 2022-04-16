@@ -4,8 +4,14 @@ require('../Exception/Exception')
 
 const getAllTask = async (req, res) => {
     try {
-        const taskList = await Task.find()
-        console.log(taskList)
+        var limit
+        if(!req.query.limit) {
+            limit = 5
+        } else {
+            limit = req.query.limit
+        }
+        const taskList = await Task.find().skip(req.query.page * limit).limit(limit)
+        console.log(limit)
         res.status(200).send(taskList)
     } catch (err) {
         res.status(500).send(err)
@@ -36,6 +42,8 @@ const updateOneTask = async (req, res) => {
     try {
         const task = req.body
     
+        req.body.update_at = new Date(Date.now())
+
         await Task.updateOne({ _id: req.params.id}, task)
         
         res.status(200).send(task) 

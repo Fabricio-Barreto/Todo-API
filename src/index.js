@@ -7,6 +7,9 @@ const connectToDb = require("../database/db")
 connectToDb()
 const app = express()
 const port = process.env.PORT || 3000
+var allowedOrigins = ['http://localhost:3000',
+                      'https://todoapiplancto.herokuapp.com/',
+                        ]
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
