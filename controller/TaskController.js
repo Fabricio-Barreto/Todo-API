@@ -19,6 +19,10 @@ const getAllTask = async (req, res) => {
 }
 
 const createTask = async (req, res) => {
+
+    req.body.date = new Date(Date.now())
+    req.body.updated_at = new Date(Date.now())
+
     const task = new Task(req.body)
 
     try {
@@ -42,7 +46,7 @@ const updateOneTask = async (req, res) => {
     try {
         const task = req.body
     
-        req.body.update_at = new Date(Date.now())
+        req.body.updated_at = new Date(Date.now())
 
         await Task.updateOne({ _id: req.params.id}, task)
         

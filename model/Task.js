@@ -19,11 +19,11 @@ const taskSchema = new mongoose.Schema({
     },
     date: {
         type: Date,
-        default: Date.now(),
+        
     },
-    update_at: {
+    updated_at: {
         type: Date,
-        default: Date.now(),
+        default: 0,
     }
 })
 
