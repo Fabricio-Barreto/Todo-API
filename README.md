@@ -39,6 +39,24 @@ N/A
      "date": "2022-04-10T04:22:38.655Z",
      "v": 0
     }
+    
+### GET https://todoapiplancto.herokuapp.com/api/v1/tasks?page=2&limit=1
+
+##### HTTP Request Body Example
+N/A
+
+##### HTTP Response Body Example
+
+    {
+     "_id": "6252585dab79fae147baf49d",
+     "name": "Name atualizada",
+     "description": "Tarefa Atualizada",
+     "check": false,
+     "date": "2022-04-10T04:08:59.419Z",
+     "v": 0
+    }
+    
+    
 
 ### POST https://todoapiplancto.herokuapp.com/api/v1/tasks
 
