@@ -118,7 +118,7 @@ N/A
      "__v": 0
     }
     
-### GET https://todoapiplancto.herokuapp.com/api/v1check/2532b61df217ed18170d166 
+### GET https://todoapiplancto.herokuapp.com/api/v1/check/2532b61df217ed18170d166 
 
 ##### HTTP Request Body Example
 N/A
@@ -130,7 +130,7 @@ N/A
       Task Deleted
     }
     
-### GET https://todoapiplancto.herokuapp.com/api/v1deleteOne/6252585dab79fae147baf49d
+### GET https://todoapiplancto.herokuapp.com/api/v1/deleteOne/6252585dab79fae147baf49d
 
 ##### HTTP Request Body Example
 N/A
